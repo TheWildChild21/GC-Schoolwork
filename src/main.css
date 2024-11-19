@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Pixelon';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('https://fonts.cdnfonts.com/s/113833/Pixelon-E4JEg.woff') format('woff');
+}
+
+body {
+    background-color: #012549;
+    margin: 0px;
+}
+
+p { margin: 0; padding: 0; }
+
+#header {
+    font-size: 50px; 
+    font-family: 'Lemon/Milk', sans-serif; 
+    color:rgb(255, 255, 255); 
+    background-color: #001f3d;
+    font-weight: bold;
+    display: flex;
+    border-bottom: solid #aaddff;
+}
+
+#header a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+#maincontent {
+    /*background-image:url("images/gamecharacters.png");*/
+}
+
+#about {
+    color: #aaddff;
+    font-family: 'Hey Comic', sans-serif;
+    margin-top: 150px;
+    background-color: #001f3d;
+}
+
+#about h2 {
+    font-size: 75px;
+    margin-bottom: 5px;
+}
+
+#subheader {
+    font-size:  80px;
+    color: #aaddff;
+    font-family: 'Hey Comic', sans-serif;
+    margin-top:135px;
+    float: left;
+}
+
+#main-logo {
+    text-align: center;
+    float: right;
+}
+
+#pageheader {
+    font-size:  45px;
+    color: whitesmoke;
+    font-family: 'Hey Comic', sans-serif;margin-left:5px ;
+}
+
+
+.play-games-btn {
+    background-color: rgba(1, 10, 34, 0.699);
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 45px;
+    display: inline-block;
+    align-self: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+}
+
+.game-toggle {
+    color: #aaddff;
+    text-decoration: none;
+    font-family: 'Pixelon';
+    font-size: 50px;
+    text-align: center;
+    display: inline-block;
+}
+
+.game-toggle img {
+    border: solid 3.5px #aaddff
+}
+
+.clear { clear: both; }
+
+#footer { 
+    clear: both;
+}
