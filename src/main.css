@@ -27,10 +27,6 @@ p { margin: 0; padding: 0; }
     display: inline-block;
 }
 
-#maincontent {
-    /*background-image:url("images/gamecharacters.png");*/
-}
-
 #about {
     color: #aaddff;
     font-family: 'Hey Comic', sans-serif;
