@@ -51,6 +51,7 @@ gameBackButton.addEventListener("click", function(e) {
     
     gameController.style.display = "none"
     gamesList.style.display = "block"
+    gameContainer.src = ""
 
     return false;
 });
