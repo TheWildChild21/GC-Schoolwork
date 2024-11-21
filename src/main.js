@@ -28,7 +28,7 @@ timeline.add({
 let gameToggles = document.querySelectorAll(".game-toggle");
 let gameContainer = document.querySelector("#game-container");
 let gameController = document.querySelector("#game-controller");
-let currentClickedGameToggle;
+let gamesList = document.querySelector("#games-list");
 
 for (let i = 0; i < gameToggles.length; i++) {
     gameToggles[i].addEventListener("click", function(e) {
@@ -37,9 +37,7 @@ for (let i = 0; i < gameToggles.length; i++) {
     
         gameController.style.display = "block";
         gameContainer.src = this.href;
-        this.style.display = "none";
-    
-        currentClickedGameToggle = this;
+        gamesList.style.display = "none";
     
         return false;
     });
@@ -50,10 +48,9 @@ let gameBackButton = document.querySelector("#game-back-button");
 gameBackButton.addEventListener("click", function(e) {
     e.preventDefault();
     e.stopPropagation();
-
-    currentClickedGameToggle.style.display = "inline-block";
     
     gameController.style.display = "none"
+    gamesList.style.display = "block"
 
     return false;
 });

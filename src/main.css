@@ -36,6 +36,7 @@ p { margin: 0; padding: 0; }
     font-family: 'Hey Comic', sans-serif;
     margin-top: 150px;
     background-color: #001f3d;
+    padding-bottom: 150px;
 }
 
 #about h2 {
@@ -82,10 +83,72 @@ p { margin: 0; padding: 0; }
     font-size: 50px;
     text-align: center;
     display: inline-block;
+    margin-right: 0px;
+    position: relative;
 }
 
 .game-toggle img {
-    border: solid 3.5px #aaddff
+    width: 200px;
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.game-toggle .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  text-align: center;
+}
+
+.game-toggle:hover img {
+    opacity: 0.3;
+}
+
+.game-toggle:hover .middle {
+    opacity: 1;
+}
+
+.game-toggle .text {
+    background-color: #001f3d;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 16px 32px;
+}
+
+#game-back-button {
+    background-color: rgba(1, 10, 34, 0.699);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    display: inline-block;
+    align-self: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+}
+
+#game-controller {
+    display: none;
+}
+
+
+#game-container {
+    height: 100%; 
+    width: 100%;
+}
+
+.game-toggle img {
+    border: solid 3.5px #aaddff;
+    border-radius: 15px;
+    
 }
 
 .clear { clear: both; }
