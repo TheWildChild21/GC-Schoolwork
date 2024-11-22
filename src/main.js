@@ -36,7 +36,7 @@ for (let i = 0; i < gameToggles.length; i++) {
         e.stopPropagation();
     
         gameController.style.display = "block";
-        gameContainer.src = this.href;
+        gameContainer.src = this.getAttribute("game-url");
         gamesList.style.display = "none";
     
         return false;
