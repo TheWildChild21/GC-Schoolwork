@@ -68,7 +68,8 @@ p { margin: 0; padding: 0; }
 #pageheader {
     font-size:  45px;
     color: whitesmoke;
-    font-family: 'Hey Comic', sans-serif;margin-left:5px ;
+    font-family: 'Hey Comic', sans-serif;
+    margin-left:5px ;
 }
 
 
@@ -81,7 +82,7 @@ p { margin: 0; padding: 0; }
     font-size: 45px;
     display: inline-block;
     align-self: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+    font-family: 'Verdana';
 }
 
 .game-toggle {
@@ -139,7 +140,7 @@ p { margin: 0; padding: 0; }
     font-size: 35px;
     display: inline-block;
     align-self: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+    font-family: 'Hey Comic', sans-serif;
 }
 
 #game-controller {
