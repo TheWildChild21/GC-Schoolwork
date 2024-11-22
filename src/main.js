@@ -45,13 +45,15 @@ for (let i = 0; i < gameToggles.length; i++) {
 
 let gameBackButton = document.querySelector("#game-back-button");
 
-gameBackButton.addEventListener("click", function(e) {
-    e.preventDefault();
-    e.stopPropagation();
+if (gameBackButton != null) {
+    gameBackButton.addEventListener("click", function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        gameController.style.display = "none"
+        gamesList.style.display = "block"
+        gameContainer.src = ""
     
-    gameController.style.display = "none"
-    gamesList.style.display = "block"
-    gameContainer.src = ""
-
-    return false;
-});
+        return false;
+    });
+}
