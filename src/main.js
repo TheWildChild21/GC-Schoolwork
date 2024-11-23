@@ -28,6 +28,7 @@ timeline.add({
 let gameToggles = document.querySelectorAll(".game-toggle");
 let gameContainer = document.querySelector("#game-container");
 let gameController = document.querySelector("#game-controller");
+let gameButtonsContainer = document.querySelector("#game-buttons-container");
 let gamesList = document.querySelector("#games-list");
 
 for (let i = 0; i < gameToggles.length; i++) {
@@ -35,7 +36,8 @@ for (let i = 0; i < gameToggles.length; i++) {
         e.preventDefault();
         e.stopPropagation();
     
-        gameController.style.display = "block";
+        gameController.style.display = "flex";
+        gameButtonsContainer.style.display = "block";
         gameContainer.src = this.getAttribute("game-url");
         gamesList.style.display = "none";
     
@@ -50,9 +52,10 @@ if (gameBackButton != null) {
         e.preventDefault();
         e.stopPropagation();
         
-        gameController.style.display = "none"
-        gamesList.style.display = "block"
-        gameContainer.src = ""
+        gameController.style.display = "none";
+        gameButtonsContainer.style.display = "none";
+        gamesList.style.display = "block";
+        gameContainer.src = "";
     
         return false;
     });
